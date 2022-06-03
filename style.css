@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+   height: 100vh;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'head'
+    'main'
+    'relacionados'
+    'prefooter'
+    'footer';
+    
+   
+}
+.head {
+  grid-area: head;
+  width: 100%;
+  background-color: #e2b474;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 26px;
+}
+
+.head .logo {
+  height: 90px;
+  width: 90px;
+}
+.head .icon {
+  font-size: 25px;
+  /* height: 50px;
+   width: 50px; */
+}
+.main {
+  grid-area: main;
+  width: 100%;
+  
+}
+.hero {
+  width: 100%;
+  background-image: url(/img/pizzeria-nona.webp);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+  align-items: center;
+}
+
+
+.contenedor-post {
+  width: 100%;
+  padding: 50px;
+  
+}
+.posts {
+   display: flex;
+   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.column4 {
+  width: 230px;
+  padding: 10px;
+  
+}
+.column4 img {
+  width: 100%;
+  height: 160px;
+}
+
+.relacionados {
+  grid-area: relacionados;
+  background-color: #aa7d68;
+  /* width: 100%; */
+}
+.contenedor-relacionados {
+  
+  width: 100%;
+  padding: 35px;
+}
+
+.rel {
+  /* margin: 20px 0; */
+  padding: 50px;
+}
+.noticia {
+  padding-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+.noticia img {
+  width: 120px;
+}
+
+.destacado {
+  padding: 50px;
+}
+.destacado img {
+  margin: 20px 0;
+}
+.prefooter {
+  grid-area: prefooter;
+  background-color: #ad4e34;
+  width: 100%;
+}
+.contenedor-prefooter {
+  margin: 40px;
+  padding: 50px;
+}
+
+.column6 {
+  margin: 20px 0;
+}
+#lateral li {
+  list-style: none;
+}
+#lateral li a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #131010;
+  height: 60px;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+}
