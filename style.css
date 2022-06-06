@@ -9,11 +9,11 @@ body {
 }
 
 #container {
-   height: 100vh;
-    width: 100%;
-    max-width: 375px;
-    margin: 0 auto;
-   display: grid;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  max-width: 375px;
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
     'head'
@@ -21,8 +21,6 @@ body {
     'relacionados'
     'prefooter'
     'footer';
-    
-   
 }
 .head {
   grid-area: head;
@@ -41,17 +39,15 @@ body {
 }
 .head .icon {
   font-size: 25px;
-  /* height: 50px;
-   width: 50px; */
+
 }
 .main {
   grid-area: main;
   width: 100%;
-  
 }
 .hero {
   width: 100%;
-  background-image: url(/img/pizzeria-nona.webp);
+  background-image: url('/img/pizzeria-nona.webp');
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -60,15 +56,14 @@ body {
   align-items: center;
 }
 
-
 .contenedor-post {
+  background-color: #ecbda8;
   width: 100%;
   padding: 50px;
-  
 }
 .posts {
-   display: flex;
-   flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
@@ -76,7 +71,6 @@ body {
 .column4 {
   width: 230px;
   padding: 10px;
-  
 }
 .column4 img {
   width: 100%;
@@ -89,7 +83,6 @@ body {
   /* width: 100%; */
 }
 .contenedor-relacionados {
-  
   width: 100%;
   padding: 35px;
 }
